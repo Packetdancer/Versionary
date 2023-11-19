@@ -1,4 +1,4 @@
-# ![Versionary Logo](Resources/Icon128.png) Versionary
+# ![Versionary Logo](Resources/Versionary-logo.png)
 
 ## Overview
 
@@ -41,6 +41,8 @@ The variables which Versionary will *read* as per-mod settings are:
 * **ToolOnlyMod** (Boolean): if `True`, Versionary will ignore this mod when populating the mod list in the uploader window. Versionary itself has a top-level `ModVersionData` which has this set, ensuring it doesn't show up in its own upload menu.
 
 There is an example `ModVersionData` in the `Templates` directory, which has all the variables (with descriptions!) as well as two helper functions to automatically format the build data as `Text` values for a mod to use wherever they wish to display their version number.
+
+There is also a `Python` directory which will appear empty in the editor; in actuality, there is an `init_unreal.py` file there; Unreal will run `Python/init_unreal.py` for every active plugin when the editor starts up, and Versionary makes use of this fact to add itself to the menubar. 
 
 ## Why Not Data Tables?
 
