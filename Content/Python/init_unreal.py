@@ -13,7 +13,7 @@ class VersionaryUploadMenuItem(unreal.ToolMenuEntryScript):
     @unreal.ufunction(override=True)
     def execute(self, context):
         unreal.EditorUtilitySubsystem().spawn_and_register_tab(
-            unreal.EditorAssetLibrary.load_asset("/Versionary/Uploader/ModUploadWindowNew.ModUploadWindowNew"))
+            unreal.EditorAssetLibrary.load_asset("/Versionary/Uploader/ModUploadWindowNew_Vers.ModUploadWindowNew_Vers"))
 
     @unreal.ufunction(override=True)
     def get_label(self, context) -> unreal.Text:
